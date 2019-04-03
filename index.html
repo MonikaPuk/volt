@@ -5,10 +5,151 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
-    <title>Volt Roskilde</title>
-</head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Khula:800|Lato:300,400,700" rel="stylesheet"></head>
 <body>
-    <a href="form.html">Buy</a>
+    <div class="navbar">
+        <img src="assets/volt_ros.png" alt="logo" id='logo'>
+        <div id='subpages'>
+            <a href="https://getvolt.dk/en/festivals">FESTIVALS</a>
+            <a href="https://getvolt.dk/en/volunteer">VOLUNTEER</a>
+            <a href="https://getvolt.dk/en/shop">SHOP</a>
+            <a href="https://getvolt.dk/en/help">HELP</a>
+            <a href="https://getvolt.dk/blog/">BLOG</a>
+        </div>
+        <div class="user">
+                <i class="fas fa-shopping-cart"></i>
+                <p>0</p>
+                <i class="fas fa-user"></i>
+                <p>LOG IN</p>
+                <p>SIGN UP</p>
+            </div>
+    </div>
+    <div id='video'><iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fgetvolt%2Fvideos%2F1218960118252233%2F&show_text=0&width=560" width="1000" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe></div>
+    <main>
+    <div class="section">
+        <div id='heading'>
+    <h1>Forget about your battery running down! Book Volt charging service and enjoy </br>
+        <span class='roskilde'>ROSKILDE </br> FESTIVAL</span></h1>
+        <p id='old_price'> 250</p>
+        <button class="buy">Book now for <span id="new_price">179 DKK</span></button>
+        <div class="container">
+                <h3>Offer ends in:</h3>
+                <ul>
+                  <li><span id="days"></span>Days </li>
+                  <li><span id="hours"></span>Hours</li>
+                  <li><span id="minutes"></span>Minutes</li>
+                  <li><span id="seconds"></span>Seconds</li>
+                </ul>
+              </div>
+    </div>
+    <div id='rectangles'>
+    <div class="rect">
+            <i id='basket' class="fas fa-shopping-cart green"></i>
+<p class="description_rect">Order your Volt power bank</p>
+    </div>
+    <div class="rect">
+        <img id='battery_green' src="assets/battery_green.svg" alt="battery">
+        <p class="description_rect">Charge your phone!</p>
+
+    </div>
+    <div class="rect">
+        <img id='green_arrows' src="assets/green_arrows.svg" alt="">
+        <p class="description_rect">Out of battery? 
+                Swap it- take a new one!</p>
+
+    </div>
+</div>
+    </div>
+    <div class="section1">
+        <img id='grass' src="assets/grass.png">
+        <div id='sec1_text'><h2>What's the deal?</h2>
+            <h4>Swapping service</h4> </br>
+            <img class='icon1' src="assets/arrows.png" alt="arrows">
+        <p class="text">Out of the battery? Forget about the queue! Return your discharged Volt power bank in the Volt tent and swap it for a full one*!</p>
+                <p id='expl'>* once a day</p>
+                <h4>Renting Volt power bank</h4> </br>
+                <img class='icon1' src="assets/powerbank.svg" alt='power bank'>
+                <p class="text">To use the swapping service you’ll need Volt Power bank. You can rent it for free! The only price you pay is the deposit, which you get fully back with returning it at the end of the festival. You can also keep the power bank for the price of deposit.</p>
+        </div>
+    </div>
+
+    <div class="section2">
+        <div id='section2_in'>
+        <h2>How does it work?</h2>
+        <div class="journey_div">
+    <i class="fas fa-shopping-cart icon2"></i>
+    <p><span class="num">1 </span> Book your Volt charging service</p>
+</div>
+<div class="line"></div>
+<div class="journey_div">
+    <img src='assets/charging.svg' class='icon2'>
+    <p><span class="num">2 </span>Pick up the power bank at the festival or ship it to your home and use it even before the event!</p>
+</div>
+<div class="line"></div>
+<div class="journey_div">
+     <i class="far fa-grin-beam icon2"></i>
+     <p><span class="num">3 </span>Have fun at the festival not thinking about your battery going down</p>
+</div>
+<div class="journey_div">
+    <img src="assets/arrows.png" alt="" class="icon2">
+    <p> <span class="num">4 </span>Out of the battery? Forget about the queue! Return your discharged Volt power bank in the Volt tent and swap it for a full one!</p>
+</div>
+<div class="line"></div>
+
+<div class="journey_div">
+    <p> <span class="num">5 </span>Return it and get your <span id='full'> full </span> deposit back, OR leave us your deposit and enjoy using volt power bank in everyday life and at the next festival!</p>
+</div>
+</div>
+    </div>
+
+<div class='section3'>
+    <div class="sec3_text">
+    <div id='heading2'>
+        <h1>Volt POWER bank</h1>
+        <h2 id='sec3_head'>Our small portable charger is protected by a waterproof and scratch-resistant casing, ready to withstand even the toughest festival environment.
+        </h2>
+    </div>
+    <div class="benefit_divs">
+<div class="benefit_div">
+    <img src="assets/cables.png" alt="icon">
+    <h4>Cables for all phones</h4>
+    <p>The charger comes with a short custom-made cable. We’ve cables for iPhones, Android and USB-C.</p>
+</div>
+<div class="benefit_div">
+        <img src="assets/battery.png" alt="icon">
+        <h4> Capacity
+            </h4>
+            <p>The Volt Charger holds 3500 mAh. This is enough power for more than a full charge of an iPhone 8.
+                </p>
+
+</div>
+<div class="benefit_div" id="pocket_div">
+        <img src="assets/pocket.png" alt="icon">
+        <h4>Pocket friendly
+            </h4>
+<p>Being smaller than a pack of cigarettes the Volt Charger fits perfectly in your pocket.</p>
+</div>
+<div class="benefit_div">
+        <img src="assets/fast.png" alt="icon">
+        <h4>Fast charging
+            </h4>
+<p>The Volt Charger provides 1.5A, this is 50% faster than a normal wall charger. Most phones will fully charge in less than 90 min.</p>
+</div>
+<div class="benefit_div">
+        <img src="assets/energy.png" alt="icon">
+        <h4>Renewable Energy
+            </h4>
+    <p>We are collaborating with Natur-Energi A/S, who guarantees that all power used for charging the chargers is 100% certified renewable energy from Danish wind mills.
+    </p>
+</div>
+</div>
+    </div>
+    <img id='sec3_photo' src="assets/volt-charger.png" alt="">
+
+</div>
+
+    </main>
     <script src="main.js"></script>
 </body>
 </html>
