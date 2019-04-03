@@ -47,88 +47,84 @@
     <!-- FORM -->
     <form action="">
         <!-- PLACE ORDER -->
-        <section>
+        <section id="sectionOrder">
             <header class="sec__title">
                 <h2>ORDER</h2>
                 <h2 id="edit-order" class="clickable hide"><i class="fas fa-pen"></i></h2>
             </header>
 
-            <article>
-                <div class="sec__product">
-                    <img class="border__radius--light" src="imgs/roskilde-festival-2019.png" alt="product image">
-                    <div class="product__details">
-                        <h3>Volt Swapping services at Roskilde festival</h3>
+            <article class="sec__product">  
+                <img class="border__radius--light" src="imgs/roskilde-festival-2019.png" alt="product image">
+                <div class="product__details">
+                    <h3>Volt Swapping services at Roskilde festival</h3>
 
-                        <div class="display__flex ">
-                            <select class="border__radius--light border--dark"  id="inputQtySwap" name="quantity" required>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                                <option value="6">6</option>
-                                <option value="7">7</option>
-                                <option value="8">8</option>
-                                <option value="9">9</option>
-                                <option value="10">10</option>
-                                <option value="11">11</option>
-                                <option value="12">12</option>
-                                <option value="13">13</option>
-                                <option value="14">14</option>
-                                <option value="15">15</option>
-                                <option value="16">16</option>
-                                <option value="17">17</option>
-                                <option value="18">18</option>
-                                <option value="19">19</option>
-                                <option value="20">20</option>
-                            </select>
-                            <p><span id="sec__price--new">179 DKK</span> <span id="sec__price--old">250 DKK</span></p>
-                        </div>
-
-                        <p class="text--details">
-                            * The swapping service enables you to swap your Volt Charger for a fully charged once a day.
-                        </p>
+                    <div class="display__flex ">
+                        <select class="border__radius--light border--dark"  id="inputQtySwap" name="quantity" required>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                        </select>
+                        <p><span id="sec__price--new">179 DKK</span> <span id="sec__price--old">250 DKK</span></p>
                     </div>
-                </div>
+
+                    <p class="text--details">
+                        * The swapping service enables you to swap your Volt Charger for a fully charged once a day.
+                    </p>
+                </div>             
             </article>
 
-            <article>
-                <div class="sec__product">
-                    <img class="border__radius--light" src="imgs/volt-charger-trimmed.png" alt="product image">
-                    <div class="product__details">
-                        <h3>Volt Power Bank deposit</h3>
-            
-                        <div class="display__flex ">
-                            <select class="border__radius--light border--dark" id="inputQtyBattery" name="quantity" required>
-                                <option value="0">0</option>
-                                <option selected="selected" value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                                <option value="6">6</option>
-                                <option value="7">7</option>
-                                <option value="8">8</option>
-                                <option value="9">9</option>
-                                <option value="10">10</option>
-                                <option value="11">11</option>
-                                <option value="12">12</option>
-                                <option value="13">13</option>
-                                <option value="14">14</option>
-                                <option value="15">15</option>
-                                <option value="16">16</option>
-                                <option value="17">17</option>
-                                <option value="18">18</option>
-                                <option value="19">19</option>
-                                <option value="20">20</option>
-                            </select>
+            <article class="sec__product">
+                <img class="border__radius--light" src="imgs/volt-charger-trimmed.png" alt="product image">
+                <div class="product__details">
+                    <h3>Volt Power Bank deposit</h3>
+        
+                    <div class="display__flex ">
+                        <select class="border__radius--light border--dark" id="inputQtyBattery" name="quantity" required>
+                            <option value="0">0</option>
+                            <option selected="selected" value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                        </select>
                         <p id="sec__price">200 DKK</p>                        
                     </div>
-                        <p class="text--details">
-                            * Each Volt Power bank has a 200 DKK deposit, which you can will get refunded fully after you return the power bank to
-                            us before or after the event.
-                        </p>
-                </div>
+                    <p class="text--details">
+                        * Each Volt Power bank has a 200 DKK deposit, which you can will get refunded fully after you return the power bank to
+                        us before or after the event.
+                    </p>
                 </div>
             </article>
 
@@ -136,7 +132,7 @@
         </section>
 
         <!-- SHIPPING TO -->
-        <section>
+        <section id="sectionShipping">
             <header class="sec__title">
                 <h2>SHIPPING TO</h2>
                 <h2 id="edit-shipping" class="clickable"><i class="fas fa-pen"></i></h2>
@@ -158,7 +154,7 @@
         </section>
 
         <!-- PERSONAL DETAILS -->
-        <section>
+        <section id="sectionPersonal">
             <header class="sec__title">
                 <h2>PERSONAL DETAILS</h2>
                 <h2 id="edit-personal" class="clickable"><i class="fas fa-pen"></i></h2>
@@ -184,7 +180,7 @@
         </section>
 
         <!-- PAYMENT -->        
-        <section>
+        <section id="sectionPayment">
             <header class="sec__title">
                 <h2>PAYMENT</h2>
                 <h2 id="edit-payment" class="clickable"><i class="fas fa-pen"></i></h2>
@@ -218,7 +214,7 @@
             <button id="btn__payment" class="btn__next border--dark clickable">NEXT</button>
         </section>
 
-        <input class="btn__next border--dark clickable" type="submit" value="SUBMIT">
+        <input id="finalConfirm" class="btn__next border--dark clickable" type="submit" value="SUBMIT">
     </form>
     <script src="form.js"></script>
 </body>

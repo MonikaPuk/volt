@@ -218,11 +218,8 @@ button {
     margin: 8px;
     padding: 8px;
 
-    opacity: 0.3;
 }
-.radio-box > *:hover {
-    opacity: 1;
-}
+
 
 /* TEXT */
 .text--details {
@@ -234,11 +231,13 @@ button {
 }
 
 /* STATUS BAR SVG */
+#active {
+    position: relative;
+    
+}
 #section__status {
     background-color: white;
     height: 70px;
-
-
 }
 #progressBar {
     width: 92%;
