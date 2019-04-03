@@ -254,6 +254,7 @@ button {
         width: 100%;
         text-align: center;
         font-size: 25px;
+        padding: 10px;
 
     }
     
@@ -289,19 +290,27 @@ justify-content: center;
 
 
 .icon2{
-    width: 70px;
-    font-size: 70px;
+    width: 50px;
+    font-size: 50px;
 }
 
 .journey_div > p {
     width: 150px;
     font-weight: var(--light);
     font-size: 13px;
+    padding: 10px;
+}
 
+.journey_div{
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 10px;
+padding-bottom: 60px;
 }
 
 #section2_in{
-    width: 80vw;
+    width: 900px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -315,4 +324,10 @@ justify-content: center;
    margin-right: 15px;
 
     border-bottom: 1px dashed;
+}
+
+.num{
+    font-weight: var(--bold);
+    font-size: 20px;
+    padding: 4px;
 }
