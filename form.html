@@ -5,13 +5,217 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
     <link rel="stylesheet" href="form.css">
     <title>Volt Roskilde - Checkout</title>
 </head>
 
 <body>
-    
 
+    <header id="header">
+        <h1 id="link__back"><i class="fas fa-chevron-left"></i></h1>
+        <h1>CHECKOUT</h1>
+    </header>
+
+    <!-- PROGRESS BAR -->
+    <section id="section__status" class="position--center">
+        <!-- Progress bar SVG -->
+        <svg id="progressBar" data-name="Layer 1" viewBox="0 0 373.65 29.23">
+
+            <g id="line" class="cls-1">
+                <rect class="cls-2" x="13.94" y="5" width="340" height="4" />
+            </g>
+
+            <circle id="active" class="cls-3" cx="14.94" cy="7" r="7" />
+            <circle id="step3" class="cls-4" cx="351.94" cy="7" r="4" />
+            <circle id="step2-5" class="cls-4" cx="267.94" cy="7" r="3" />
+            <circle id="step2" class="cls-4" cx="183.44" cy="7" r="4" />
+            <circle id="step1-5" class="cls-4" cx="98.94" cy="7" r="3" />
+            <circle id="step1" class="cls-5" cx="14.94" cy="7" r="4" /><text class="cls-6"
+                transform="translate(0 26.44)">ORDER</text><text class="cls-6"
+                transform="translate(162.53 25.97)">SHIPPING</text><text class="cls-6" transform="translate(331.24 26.66)">
+                <tspan class="cls-7">P</tspan>
+                <tspan class="cls-8" x="5.12" y="0">A</tspan>
+                <tspan x="10.69" y="0">YMEN</tspan>
+                <tspan class="cls-9" x="37.14" y="0">T</tspan>
+            </text>
+        </svg>
+    </section>
+
+    <!-- FORM -->
+    <form action="">
+        <!-- PLACE ORDER -->
+        <section id="sectionOrder">
+            <header class="sec__title">
+                <h2>ORDER</h2>
+                <h2 id="edit-order" class="clickable hide"><i class="fas fa-pen"></i></h2>
+            </header>
+
+            <article class="sec__product">  
+                <img class="border__radius--light" src="imgs/roskilde-festival-2019.png" alt="product image">
+                <div class="product__details">
+                    <h3>Volt Swapping services at Roskilde festival</h3>
+
+                    <div class="display__flex ">
+                        <select class="border__radius--light border--dark"  id="inputQtySwap" name="quantity" required>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                        </select>
+                        <p><span id="sec__price--new">179 DKK</span> <span id="sec__price--old">250 DKK</span></p>
+                    </div>
+
+                    <p class="text--details">
+                        * The swapping service enables you to swap your Volt Charger for a fully charged once a day.
+                    </p>
+                </div>             
+            </article>
+
+            <article class="sec__product">
+                <img class="border__radius--light" src="imgs/volt-charger-trimmed.png" alt="product image">
+                <div class="product__details">
+                    <h3>Volt Power Bank deposit</h3>
+        
+                    <div class="display__flex ">
+                        <select class="border__radius--light border--dark" id="inputQtyBattery" name="quantity" required>
+                            <option value="0">0</option>
+                            <option selected="selected" value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                        </select>
+                        <p id="sec__price">200 DKK</p>                        
+                    </div>
+                    <p class="text--details">
+                        * Each Volt Power bank has a 200 DKK deposit, which you can will get refunded fully after you return the power bank to
+                        us before or after the event.
+                    </p>
+                </div>
+            </article>
+
+            <button id="btn__order" class="btn__next border--dark">NEXT</button>
+        </section>
+
+        <!-- SHIPPING TO -->
+        <section id="sectionShipping">
+            <header class="sec__title">
+                <h2>SHIPPING TO</h2>
+                <h2 id="edit-shipping" class="clickable"><i class="fas fa-pen"></i></h2>
+            </header>
+
+            <div class="radio-box">
+                <div class="border--light">
+                    <input type="radio" name="shipto" value="own"> Bringing own Volt Power Bank<br>Free<br>
+                </div>
+                <div class="border--light">
+                    <input type="radio" name="shipto" value="festival"> Pick up at festival or at Volt in CPH<br>Free<br>
+                </div>
+                <div class="border--light">
+                    <input type="radio" name="shipto" value="home"> Ship to home<br>50 DKK<br>
+                </div>
+            </div>
+
+            <button id="btn__shipping" class="btn__next border--dark">NEXT</button>
+        </section>
+
+        <!-- PERSONAL DETAILS -->
+        <section id="sectionPersonal">
+            <header class="sec__title">
+                <h2>PERSONAL DETAILS</h2>
+                <h2 id="edit-personal" class="clickable"><i class="fas fa-pen"></i></h2>
+            </header>
+            
+            <button id="btn__fb"><i class="fab fa-facebook-square"></i> Continue with Facebook</button>
+            <p class="text--details text--centered">
+                Continue with Facebook to checkout faster. We don't post anything!
+            </p>
+            <h2 class="sec__title-small text--centered">OR SIGN UP WITH YOUR EMAIL</h2>
+            
+            <input type="email" name="email" id="inputEmail" placeholder="Email" required>
+            <input type="password" name="password" id="inputPassword" placeholder="Password" required>
+            <input type="text" name="name" id="inputName" placeholder="Full name" required>
+            <input type="tel" name="phone" id="inputPhone" placeholder="Phone number" required>
+            <input type="country" class="form-control" id="inputCountry" placeholder="Country" required>
+
+            <input type="city" class="form-control" id="inputCity" placeholder="City" required>
+            <input type="street" class="form-control" id="inputStreet" placeholder="Street" required>
+            <input type="zip" class="form-control" id="inputZip" placeholder="Zip" required>
+
+            <button id="btn__personal" class="btn__next border--dark">NEXT</button>
+        </section>
+
+        <!-- PAYMENT -->        
+        <section id="sectionPayment">
+            <header class="sec__title">
+                <h2>PAYMENT</h2>
+                <h2 id="edit-payment" class="clickable"><i class="fas fa-pen"></i></h2>
+            </header>
+
+            <!-- Payment methods -->
+            <div>
+                <img src="imgs/card.png" alt="card icon">
+                <img src="imgs/mobile-pay.png" alt="mobile pay icon">
+                <img src="imgs/paypal.png" alt="paypal icon">
+            </div>
+
+            <!-- Card details if card payment option chosen -->
+            <div>
+                <h2 class="sec__title">PAYMENT DETAILS</h2>
+
+                <input type="name" name="cardOwner" id="inputCardOwner" placeholder="Card Owner" >
+                <input type="number" name="cardNumber" id="inputCardNr" placeholder="Card Number" />
+                <input type="number" name="MM" id="inputMM" placeholder="MM" minlength="2" maxlength="2" min="1" max="12" />
+                <input type="number" name="YY" id="inputYY" placeholder="YY" minlength="2" maxlength="2" min="19" />
+                <input type="number" name="CVC" id="inputCVC" placeholder="CVC" minlength="3" maxlength="3" />
+            </div>
+
+            <div >
+                <label >
+                    <input type="checkbox" name="terms" id="inputTerms" class="text--details" required>
+                    <p>I agree to Volts terms and privacy policy.</p>
+                </label>
+            </div>
+        
+            <button id="btn__payment" class="btn__next border--dark clickable">NEXT</button>
+        </section>
+
+        <input id="finalConfirm" class="btn__next border--dark clickable" type="submit" value="SUBMIT">
+    </form>
     <script src="form.js"></script>
 </body>
 
